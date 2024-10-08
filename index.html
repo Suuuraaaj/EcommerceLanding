@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favily</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Gfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://images-platform.99static.com//pZiz_DAicT7hKU-zDvH_6AQgFFc=/423x1663:1203x2443/fit-in/590x590/99designs-contests-attachments/87/87409/attachment_87409860">
+    <style>
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid xl:grid-cols-1 grid-cols-1">
+        <div>
+            <div class="py-3 px-3 rounded-xl border w-full bg-blue-800"> 
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <!-- Logo -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                        </svg>
+                        <p class="font-semibold text-white">FAVILY</p>
+
+                        <!-- Search Bar -->
+                        <div class="relative">
+                            <input class="rounded-3xl py-3 px-3 outline-none text-xs w-[350px] pr-10 hidden lg:block md:block" placeholder="Search for Grocery, Stores, Vegetable, or Meat">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-5 h-5 text-blue-800 absolute right-3 top-1/2 transform -translate-y-1/2 hidden lg:block md:block">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Items -->
+                    <nav>
+                        <ul class="flex gap-6 text-white">
+                            <li class="hover:text-yellow-300"><a href="#home">Home</a></li>
+                            <li class="hover:text-yellow-300"><a href="#collections">Collections</a></li>
+                            
+                            <li class="hover:text-yellow-300"><a href="#about">About Us</a></li>
+                            <li class="hover:text-yellow-300"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icons for Cart and Account -->
+                    <div class="flex items-center gap-4">
+                        <!-- Cart Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white rounded-full ring-2 ring-white p-1 relative">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+
+                        <!-- Account Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-300 hidden lg:block md:block">
+                            <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Home Section -->
+        <section id="home" class="h-screen grid md:grid-cols-2 grid-cols-1">
+            <!-- Left side (Heading) -->
+            <div class="bg-blue-200 flex items-center justify-center text-blue-900 p-10">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-bold">Welcome to Favily Online Store</h1>
+                    <p class="mt-4 text-lg">Find the best deals on clothes!</p>
+                </div>
+            </div>
+
+            <!-- Right side (Image with gradient overlay) -->
+            <div class="bg-blue-300 flex items-center justify-center relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-300 via-blue-400 to-transparent opacity-80"></div> <!-- Gradient overlay -->
+                <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_580,h_326/https://famesters.com/wp-content/uploads/2024/02/Fashion-influencer-marketing-A-guide-1.png" class="object-cover rounded-lg shadow-lg w-[80%] md:w-[90%] opacity-90">
+            </div>
+        </section>
+
+        <section  id="collections" class="py-10 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-10">Our Collections</h2>
+    
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://oc.kosha.co/journal/wp-content/uploads/2022/07/winter-jacket-for-men.jpeg" alt="Clothing Item 1" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Stylish Jacket</h3>
+                            <p class="mt-2 text-gray-600">$49.99</p>
+                        </div>
+                    </div>
+    
+                    <!-- Card 2 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://m.media-amazon.com/images/I/817w70GDTLL._AC_UY1100_.jpg" alt="Clothing Item 2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Casual Shirt</h3>
+                            <p class="mt-2 text-gray-600">$29.99</p>
+                        </div>
+                    </div>
+    
+                    <!-- Card 3 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20240429/rKTE/662ecbb816fd2c6e6ad9834f/-1117Wx1400H-467162954-blue-MODEL2.jpg" alt="Clothing Item 3" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Jeans</h3>
+                            <p class="mt-2 text-gray-600">$39.99</p>
+                        </div>
+                    </div>
+    
+                    <!-- Card 4 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://www.jagranimages.com/images/newimg/25102023/25_10_2023-best_sneakers_brands_in_india_23564768.jpg" alt="Clothing Item 4" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Sneakers</h3>
+                            <p class="mt-2 text-gray-600">$59.99</p>
+                        </div>
+                    </div>
+    
+                    <!-- Card 5 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://www.beyours.in/cdn/shop/files/pure-lavender-hoodie-5.jpg?v=1695635839" alt="Clothing Item 5" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Hoodie</h3>
+                            <p class="mt-2 text-gray-600">$34.99</p>
+                        </div>
+                    </div>
+    
+                    <!-- Card 6 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F88%2Fd3%2F88d3a6015e91401c09a3041d2ee7ad2bb52f78a3.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Sweatpants</h3>
+                            <p class="mt-2 text-gray-600">$24.99</p>
+                        </div>
+                    </div>
+    
+                    <!-- Card 7 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTqlyE8Y5Xhqpy0tNYb_Y4MhOSjC2taOQ5iQ&s" alt="Clothing Item 7" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Leather Boots</h3>
+                            <p class="mt-2 text-gray-600">$79.99</p>
+                        </div>
+                    </div>
+    
+                    <!-- Card 8 -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://wforwoman.com/cdn/shop/files/23FEW18768-120819_1.jpg?v=1721332938" alt="Clothing Item 8" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Summer Dress</h3>
+                            <p class="mt-2 text-gray-600">$44.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+    <section id="about" class="py-20 bg-blue-100 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6">About Our Store</h2>
+            <p class="text-lg text-blue-700 max-w-3xl mx-auto leading-relaxed mb-8">
+                Welcome to our fashion-forward clothing store, where style meets comfort. We offer a wide selection of high-quality garments designed for all occasions—from casual everyday wear to sophisticated evening attire. Our mission is to provide fashion lovers with the latest trends and timeless classics, all at affordable prices. 
+            </p>
+
+            <!-- Highlight section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+                <!-- Card 1 -->
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Premium Quality</h3>
+                    <p class="text-blue-600">We pride ourselves on offering top-notch clothing made from high-quality materials that guarantee durability and comfort.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Latest Trends</h3>
+                    <p class="text-blue-600">Stay ahead of the fashion curve with our regularly updated collections that reflect the latest global trends.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Affordable Prices</h3>
+                    <p class="text-blue-600">Our goal is to make fashion accessible to everyone by offering trendy outfits at prices that won’t break the bank.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">📞 Phone: +1 (234) 567-890</p>
+                    <p class="mb-2">📧 Email: support@clothingstore.com</p>
+                    <p>🏢 Address: 123 Fashion St, Style City, NY 12345</p>
+                </div>
+
+                 <!-- Social Media Links -->
+                 <div>
+                    <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-yellow-300 transition duration-300">
+                            <i class="fab fa-facebook-f w-8 h-8 text-xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-yellow-300 transition duration-300">
+                            <i class="fab fa-twitter w-8 h-8 text-xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-yellow-300 transition duration-300">
+                            <i class="fab fa-instagram w-8 h-8 text-xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-yellow-300 transition duration-300">
+                            <i class="fab fa-linkedin-in w-8 h-8 text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+                    <form class="flex flex-col space-y-4">
+                        <input type="email" placeholder="Enter your email" class="rounded-full py-3 px-5 outline-none text-gray-900 w-full">
+                        <button class="bg-yellow-400 text-blue-900 py-3 rounded-full hover:bg-yellow-300 transition duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="mt-10 text-center text-sm border-t border-blue-700 pt-5">
+                <p>&copy; 2024 Clothing Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
